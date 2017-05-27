@@ -1,0 +1,32 @@
+http://localhost:8080/publications/0
+http://localhost:8080/publications/0?fields=title,year
+http://localhost:8080/publications/-1
+
+http://localhost:8080/publications
+http://localhost:8080/publications?start=5&count=10
+http://localhost:8080/publications?start=5&count=10&order=title&fields=title,year
+http://localhost:8080/publications?start=5&count=10&orders=title&fields=title,years
+
+http://localhost:8080/authors/Chua-Huang Huang
+http://localhost:8080/authors/Chua-Huang Huang?fields=Nombre de Publication
+http://localhost:8080/authors/Chua-Huang Huang?fieldss=Nombre de Publication
+
+http://localhost:8080/authors/Alexandre david/publications
+http://localhost:8080/authors/Alexandre david/publications?start=1&count=5
+http://localhost:8080/authors/Alexandre david/publications?order=title&fields=year,author, title
+
+http://localhost:8080/authors/Alexandre david/coauthors
+http://localhost:8080/authors/Alexandre david/coauthors?start=1
+http://localhost:8080/authors/Alexandre david/coauthors?count=2
+
+http://localhost:8080/search/authors/a*
+http://localhost:8080/search/authors/a*?start=2&count=5
+
+http://localhost:8080/search/publications/a*
+http://localhost:8080/search/publications/a*?count=2
+http://localhost:8080/search/publications/a*?count=10&start=2
+http://localhost:8080/search/publications/a*?start=2&count=10&order=author&fields=year,author
+
+http://localhost:8080/authors/Chua-Huang Huang/distance/Sergei Gorlatch
+http://localhost:8080/authors/Chua-Huang Huang/distance/Sergei Gorlatchs
+http://localhost:8080/authors/Chua-Huang Huang/distance/Christian Lengauer
